@@ -1,14 +1,20 @@
 import React from "react";
 import styles from '../../page.module.css'
+import { TEXTBLOCK } from "../Content/textBlocks";
+
 
 const ContactMe = () => {
     return(
-        <section className={styles.contact} id= "contact">
-
-        <div className={styles.contactContent}>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure sint illum itaque quo expedita nihil magnam repudiandae, excepturi pariatur reprehenderit quod consequatur fugit est molestiae ipsam saepe aperiam laborum placeat.</p>
+        <section className= {styles.contact}id="contact">
+        <div className={styles.padding}>
         </div>
-    </section>    
+        <div className={styles.contactContent}>
+            <h2>
+                Contact
+            </h2>
+            {TEXTBLOCK.LLOREM}
+        </div> 
+    </section>
     )
 }
 
