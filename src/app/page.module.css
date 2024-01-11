@@ -2,8 +2,6 @@
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: #3F6844;
   color: white;
-  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-
 }
 
 .head {
@@ -20,13 +18,31 @@
 }
 
 .logo {
+  padding: 0px;
   margin-top: 5px;
   margin-left: 10px;
+  filter: drop-shadow( rgba(0, 0, 0, 0.4) 0px 4px 1px );
+  fill: #daa44e;
+  transition: .5s linear;
+  transition-timing-function: ease-in-out;
+
   /* font-size: 30px;
   color: #daa44e;
   text-decoration: none;
   font-weight: 600; */
 }
+
+.logo:hover{
+  fill: #ffffff;  
+  transition: .5s linear;
+  transition-timing-function: ease-in-out;
+  scale: 105%;
+  margin: 10px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 7px 7px 3px);
+
+  
+   /*  transition-timing-function: ease-in-out; */
+  }
 
 .nav{
   padding: 20px 20px 20px 20px;
@@ -39,12 +55,21 @@
   font-weight: 1000;
   margin-left: 10px;
   margin-right: 10px;
-  transition: .3s;
+  transition: .5s linear;
+  text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition-timing-function: ease-in-out;
+
+
 }
 
 .nav a:hover{
   color: #ffffff;
-  font-size: 20px;}
+  font-weight: 2000;
+  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;      
+  font-size: 20px;
+  transition: .5s linear;
+  transition-timing-function: ease-in-out;
+}
 
 .home {
   display: flex;
@@ -185,19 +210,32 @@
   margin: auto;
 }
 
-.aboutContent{
+.card{
+  width:200px;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
-  width: min(125ch, 100% - 4rem);
-  margin-inline: auto;
+}
+.cards{
+  display:flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.aboutContent{
+  display:flex;
+  flex-direction: column;
+  margin: auto;
   color:#ffffff;
+  align-items: center;
+
 }
 
 .about h2{
+  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
   color: #daa44e;
   font-size: 45px;
   font-weight: 500;
+  padding-bottom: 10%;
 }
 
 .aboutContent p{
@@ -225,6 +263,7 @@
 }
 
 .experience h2{
+  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
   color: #daa44e;
   font-size: 45px;
   font-weight: 500;
@@ -255,6 +294,7 @@
 }
 
 .contact h2{
+  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
   color: #daa44e;
   font-size: 45px;
   font-weight: 500;

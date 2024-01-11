@@ -9,7 +9,7 @@ const ContactMe = () => {
         <div className={styles.padding}>
         </div>
         <div className={styles.contactContent}>
-            <h2>
+            <h2 className="h2Shadow">
                 Contact
             </h2>
             {TEXTBLOCK.LLOREM}

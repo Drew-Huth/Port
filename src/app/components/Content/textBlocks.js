@@ -1,3 +1,7 @@
+import styles from '../../page.module.css'
+import CardTest from '../Content/card'
+
+
 export const TEXTBLOCK = {
     LLOREM: 
     <div>
@@ -6,6 +10,10 @@ export const TEXTBLOCK = {
         </p>
     </div>,
 
+    cardtest:
+    <div className={styles.card}>
+        <CardTest></CardTest>
+    </div>
     
     
 }
