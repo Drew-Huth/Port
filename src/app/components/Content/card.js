@@ -5,6 +5,8 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import styles from '../../page.module.css'
+
 
 const bull = (
     <Box
@@ -17,7 +19,7 @@ const bull = (
 
 const card = (
     <React.Fragment>
-      <CardContent>
+      <CardContent className={styles.card}>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day
         </Typography>
@@ -41,7 +43,7 @@ const card = (
 
   export default function OutlinedCard() {
   return (
-    <Box sx={{ maxWidth: 275 }}>
+    <Box sx={{ width: 350, height:750}}>
       <Card variant="outlined">{card}</Card>
     </Box>
   );
