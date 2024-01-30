@@ -1,6 +1,7 @@
 import React from "react";
 import styles from '../../page.module.css'
-import { TEXTBLOCK } from "../Content/textBlocks";
+import Card from '../Content/card'
+
 
 const AboutMe = () => {
     return(   
@@ -11,11 +12,7 @@ const AboutMe = () => {
                 <h2 className="h2Shadow">
                     About Me
                 </h2>
-                <div className={styles.cards}>
-                    {TEXTBLOCK.cardtest}
-                    {TEXTBLOCK.cardtest}
-                    {TEXTBLOCK.cardtest}
-                </div>
+                <Card></Card>
             </div>
         </div>
     );
