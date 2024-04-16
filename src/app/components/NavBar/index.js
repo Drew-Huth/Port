@@ -8,10 +8,10 @@ const NavBar = () => {
     return(
         <header className={styles.head}>
             <div>
-                <a href="#home" className={styles.logo}>{ICONS.LETTERD}</a>
+                <a href="#home">{ICONS.LETTERD}</a>
             </div>
             <nav className={styles.nav}>
-                <a className={styles.active} href="#home">Home</a>
+                <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>

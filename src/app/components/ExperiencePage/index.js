@@ -9,7 +9,7 @@ const ExperiencePage = () => {
             <div className={styles.padding}>
             </div>
             <div className={styles.experienceContent}>
-                <h2>
+                <h2 className="h2Shadow">
                     Experience
                 </h2>
                 {TEXTBLOCK.LLOREM}

@@ -1,13 +1,14 @@
 import React from "react";
+import Image from "next/image";
 import styles from '../../page.module.css'
 import { LINKS } from "../Content/links";
 import { ICONS } from "../Content/icons";
-
-
+// import 'ME.jpg' from "../Content/"
+import Me from "../Content/Images/ME.png"
 
 const LandingPage = () => {
     return(
-        <section className={styles.home} id="home">
+        <div className={styles.home} id="home">
         <div className={styles.homeContent}>
             <h1>Hi, I am <a href="#home" className={styles.homeContentName}>Drew Huth</a></h1>
             <h3>Full-Stack Software Developer</h3>
@@ -25,9 +26,14 @@ const LandingPage = () => {
             </div>
         </div>
         <div className={styles.me}>
-            {/* <a src="IMG_5795" alt=""></a>             */}
+        <Image
+              src={Me}
+              alt="Image of Drew Huth sitting on the steps of Alumni Hall at Saint Anselm College"
+              width={600}
+              height={600}
+            />
         </div>    
-    </section>
+    </div>
     )
 }
 

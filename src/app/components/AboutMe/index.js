@@ -1,6 +1,7 @@
 import React from "react";
 import styles from '../../page.module.css'
-import { TEXTBLOCK } from "../Content/textBlocks";
+import Card from '../Content/card'
+
 
 const AboutMe = () => {
     return(   
@@ -8,8 +9,10 @@ const AboutMe = () => {
             <div className={styles.padding}>
             </div>
             <div className={styles.aboutContent}>
-                <h2>About Me</h2>
-                <div>{TEXTBLOCK.LLOREM}</div>
+                <h2 className="h2Shadow">
+                    About Me
+                </h2>
+                <Card></Card>
             </div>
         </div>
     );
