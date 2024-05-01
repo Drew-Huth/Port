@@ -1,0 +1,127 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+  }
+  
+  .aboutContent{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    color:#ffffff;
+    align-items: center;  
+  }
+  .about h2{
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    color: #c59b5e;
+    font-size: 45px;
+    font-weight: 1000;
+  }
+  
+  .aboutContent p{
+    margin: 20px 0 40px;
+    color:#000000;
+    font-size: 12px;
+  }
+  
+  .card{
+    width:45vh;
+    height:60vh;
+    padding: 20px;
+    padding-top:30px;
+    margin: 30px;
+    /* background-color: #000000; */
+    background: #6f6e7d;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    transition: .5s linear;
+    transition-timing-function: ease-in-out;
+    text-shadow: #ffffff 1px 0 10px;
+    perspective: 1000px; 
+    padding: 40px;
+  }
+  
+  .cardContent
+  
+  .cardFront{
+    
+    color: #09203f;
+    
+  }
+  
+  
+  
+  .card:nth-child(1){
+    /* background-image: url('../Content/Images/alumni.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 220%;
+    background-position: 50%;
+    background-position-x: -193px;
+    background-position-y: -50px;
+    overflow: none;
+ 
+    
+  }
+  
+  .card:nth-child(2){
+    /* background-image: url('../Content/Images/R.jpg'); */
+    background-size:100%;
+    background-position: 100%;
+    /* background-position-x: -100px;
+    background-position-y: 20px; */
+    overflow: none;
+    color: #2a4c68;
+  }
+  
+  .card:nth-child(3){
+    /* background-image: url('../Content/Images/vaporwave.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: 50%;
+    overflow: none;
+    color: #fe7c8a;
+  }
+  
+  .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: .5s linear;
+    transition-timing-function: ease-in-out;
+    scale: 102.5%;
+  }
+  
+  .card p{
+    color: #ffffff;
+    font-size: 15px;
+    
+  }
+  
+  .aboutIcons{
+    fill:#09203f;
+    scale: 50%;
+    /* filter: drop-shadow(0 0 50px #ffffff); */
+  }
+  
+  .lifeIcon{
+    /* fill:#2a4c68; */
+    scale: 50%;
+    /* filter: drop-shadow(0 0 50px #ffffff); */
+  }
+  
+  .hobbiesIcon{
+    fill:#fe7c8a;
+    scale: 50%;
+    /* filter: drop-shadow(0 0 50px #ffffff); */
+  }
+  
+  
+  .cards{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #8f8f8f;
+    border-radius: 30px;
+    margin: 20px;
+  }

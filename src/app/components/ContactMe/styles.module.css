@@ -1,0 +1,29 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+  }
+  
+  .contactContent{
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    width: min(125ch, 100% - 4rem);
+    margin-inline: auto;
+    color:#ffffff;
+  }
+  
+  .contact h2{
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    color: #c59b5e;
+    font-size: 45px;
+    font-weight: 1000;
+  }
+  
+  .contactContent p{
+    margin: 20px 0 40px;
+    font-size: 20px;
+  }
